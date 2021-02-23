@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* --------------------以上是公共样式--------------------- */
+        .nav1 {
+            width: 408px;
+            margin: 100px auto;
+        }
+
+        .nav1>li {
+            float: left;
+        }
+
+        ul a {
+            display: block;
+            width: 100px;
+            height: 40px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #fff;
+            background-color: cornflowerblue;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .nav2>li>a {
+            background-color: indianred;
+        }
+
+        .nav2 {
+            /* 初始把二级菜单隐藏 */
+            display: none;
+        }
+
+        /* 鼠标划过一级li显示二级菜单 */
+        .nav1>li:hover .nav2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav1">
+        <li>
+            <a href="#">男偶像</a>
+            <ul class="nav2">
+                <li><a href="">蔡徐坤</a></li>
+                <li><a href="">李易峰</a></li>
+                <li><a href="">吴亦凡</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">女偶像</a>
+            <ul class="nav2">
+                <li><a href="">高圆圆</a></li>
+                <li><a href="">苍老师</a></li>
+                <li><a href="">波老师</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">童星</a>
+            <ul class="nav2">
+                <li><a href="">刘星</a></li>
+                <li><a href="">杨紫</a></li>
+                <li><a href="">释小龙</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">笑星</a>
+            <ul class="nav2">
+                <li><a href="">贾玲</a></li>
+                <li><a href="">星爷</a></li>
+                <li><a href="">肾疼</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
